@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Form</title>
+    <link href="event_management_form.css" rel = "stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div id="event-form">
+        <div class="form-header">
+            <h1>Create an Event</h1>
+        </div>
+        <form method="post" action="/">
+            <div>
+                <label for="event-name" class="label">
+                    <span class="required">Name: </span>
+                    <input type="text" id="event-name" name="event-name" class="input" maxlength="100" placeholder="Event Name" required tabindex="1" autofocus />
+                </label>
+            </div>
+            <div>
+                <label for="event-description" class="label">
+                    <span class="required">Description: </span>
+                    <textarea id="event-description" name="event-description" class="input" placeholder="Event Description" required tabindex="2"></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="location" class="label">
+                    <span class="required">Location: </span>
+                    <textarea id="location" name="location" class="input" placeholder="Location" required tabindex="3"></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="skills" class="label">
+                    <span class="required">Required Skills: </span>
+                    <select id="skills" name="skills" class="input" multiple tabindex="4">
+                        <option value="management">Management</option>
+                        <option value="communication">Communication</option>
+                        <option value="technical">Technical</option>
+                        <option value="leadership">Leadership</option>
+                        <option value="teamwork">Teamwork</option>
+                        <option value="problem solving">Problem Solving</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="urgency" class="label">
+                    <span class="required">Urgency: </span>
+                    <select id="urgency" name="urgency" class="input" required tabindex="5">
+                        <option value="low">Not urgent</option>
+                        <option value="medium">Urgent</option>
+                        <option value="high">Very Urgent</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="event-date" class="label">
+                    <span class="required">Date: </span>
+                    <input type="date" id="date" name="date" class="input" required tabindex="6" />
+                </label>
+            </div>
+            <div>
+                <button name="submit" type="submit" id="submit" class="button">Create Event</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
