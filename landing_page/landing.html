@@ -19,11 +19,16 @@
                     <a href="#" class="tab">Volunteers<i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-content">
                         <a href="#">Volunteer History</a>
-                        <a href="#">Volunteer Matching Form</a>
+                        <a href="volunteer_matching_form.html">Volunteer Matching Form</a>
                     </div>
+                </div>
             </nav>
             <div class="icons">
-                <img src="profile-picture.png" alt="Profile Picture" class="profile-picture">
+                <a href="user_profile_management.html">
+                    <img src="profile-picture.png" alt="Profile Picture" class="profile-picture">
+                </a>
+                
+                       
                 <img src="notification-bell.png" alt="Notification Bell" class="notification-bell">
             </div>
         </div>
@@ -35,5 +40,12 @@
         <p>Here is your main content...</p>
     </div>
 
+    <script>
+        // JavaScript to handle navigation link
+        document.querySelector('.tab').addEventListener('click', function() {
+            window.location.href = 'event_management_form.html'; // 
+        });
+        
+    </script>
 </body>
 </html>
