@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.return-link {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B4513;
+}
+
+.form-container {
+    margin-top: 10px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #000000;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8a8a8a;
+}
+
+.new-user {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.new-user a {
+    font-weight: 600;
+    color: #8B4513;
+}
+
+.new-user a:hover {
+    color: #8B4513;
+}
